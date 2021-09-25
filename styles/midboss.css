@@ -502,10 +502,6 @@ margin-bottom: -8px;
 }
 
 #footerimg {
-    background:url("./../imgs/footer.png");
-    height: 71vh;
-    width: 100%;
-    background-repeat:no-repeat;
-    background-size:cover;
-    position: relative;
+    max-height:45vh;
+    width: auto;
 }
