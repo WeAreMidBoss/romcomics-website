@@ -1,0 +1,104 @@
+<html>
+<head>
+<style>
+body, html{
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+}
+.header{
+	width:100%;
+	height:49.1vw;
+	position: relative;
+	overflow: hidden;
+}
+
+.header-background{
+	width:100%;
+	height:100%;
+	background-image:url(comicbg.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.header-logo{
+	width:100%;
+	height:100%;
+	background-image:url(logo.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	left: -10px!important;
+}
+
+.header-logobackground{
+	width:100%;
+	height:100%;
+	background-image:url(logobg.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	left: -10px!important;
+}
+
+.header-lexi{
+	width:100%;
+	height:100%;
+	background-image:url(lexi.png);
+	position: absolute;
+	background-repeat:no-repeat;
+	background-size:contain;
+	left: -10px!important;
+}
+
+.header-panelright{
+	width:100%;
+	height:100%;
+	background-image:url(panelr.png);
+	position: absolute;
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+
+.header-panelleft{
+	width:100%;
+	height:100%;
+	background-image:url(panell.png);
+	position: absolute;
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+
+.header ul{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+.header li{
+	margin:0;
+	padding:0;
+}
+
+</style>
+</head>
+<body>
+<div class="header">
+<ul id="scene" class="header-background" data-origin-y="1.0">
+<li class="layer header-panelright" data-depth="0.015"></li>
+<li class="layer header-panelleft" data-depth="0.015"></li>
+<li class="layer header-lexi" data-depth="0.025"></li>
+<li class="layer header-logobackground" data-depth="0.02"></li>
+<li class="layer header-logo" data-depth="0.015"></li>
+</ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="jquery.parallax.min.js"></script>
+<script>
+$(function(){
+	$('#scene').parallax({clipRelativeInput:true,relativeInput:true,scalarY:3});
+});
+</script>
+
+
+</body>
+</html>
