@@ -520,10 +520,25 @@ text-align: center;
 height: 240px;
 }
 
+.contestrules h2{
+  text-align: center;
+}
+
+.contestrules ol > li::marker{
+  font-weight: bold;
+  color: #962f6b;
+}
+
+.contestrules li{
+  padding: 20px 0 20px 0;
+}
+
 header {
   margin-bottom: -70px;
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
-
+    .inner-header img{
+    height: 50%;
+    }
   }
