@@ -146,9 +146,8 @@ body {
 footer {
   background: #3c2f6e;
   color: #fff;
-  border-top: solid 2px #414042;
   padding: 2.5em 0em 0.8em;
-  font-size: 0.7em;
+  font-size: 0.75em;
   line-height: 1.5;
 }
 footer .social-links {
@@ -502,6 +501,20 @@ margin-bottom: -8px;
 }
 
 #footerimg {
-    max-height:45vh;
-    width: auto;
+    width: 100%;
+}
+
+#footerimg img{
+    width: 100%;
+}
+
+.header-compact{
+background: url("./../imgs/headerpattern.png") repeat-x;
+}
+
+.inner-header{
+background: url("./../imgs/smallheader5.png");
+background-repeat:no-repeat;
+text-align: center;
+height: 240px;
 }
