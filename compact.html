@@ -40,6 +40,9 @@
   <link rel="stylesheet" href="./styles/swiper.min.css">
   <!-- Custom styles for this template -->
   <link href="./styles/midboss.css" rel="stylesheet">
+
+  <script type="text/javascript" src="./scripts/jquery-1.7.1.min.js" ></script>
+    <script type="text/javascript" src="./scripts/signup.js" ></script>
 </head>
 <body>
 <div class=master>
@@ -65,20 +68,22 @@
             </p>
 
             <!-- Begin Signup Form -->
-            <div id="signup">
-            <form action="https://sendy.midboss.com/subscribe" method="POST" accept-charset="utf-8">
-            <label for="EMAIL"><h2>To enter the contest, join the Midboss mailing list</h2></label>
-            <input type="email" placeholder="email address" name="email" class="email" id="email" required/>
-          <div style="display:none;">
-            <label for="comic">comic</label><br/>
-            <input type="hidden" name="comic" id="comic" value="1"/>
-            </div>
-            <input type="hidden" name="list" value="RcSP70JIUHyu9UHsEMQBiQ"/>
-            <input type="hidden" name="subform" value="yes"/>
-            <input type="submit" name="submit" id="submit" value="Subscribe" class="button"/></div>
-          </form>
+          <div id="signup">
+            <form action="https://sendy.midboss.com/subscribe" method="POST" accept-charset="utf-8" name="signup-form" id="signup-form">
+              <label for="EMAIL"><h2>To enter the contest, join the Midboss mailing list</h2></label>
+              <input type="email" placeholder="email address" name="email" class="email" id="email" required/>
+              <div style="display:none;">
+                <label for="comic_contest">comic_contest</label><br/>
+                <input type="hidden" name="comic_contest" id="comic_contest" value="1"/>
+              </div>
+              <input type="hidden" name="list" value="RcSP70JIUHyu9UHsEMQBiQ"/>
+              <input type="hidden" name="subform" value="yes"/>
+              <input type="submit" name="submit"  id="submit-btn" value="Subscribe" class="button"/>
+              <p id="status"></p>
+            </form>
             </div>
             <!--End Signup Form-->
+
 
               <p>
               5 winners will be selected on October 13th. For contest rules see here ###URL###
