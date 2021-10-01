@@ -3,11 +3,10 @@ $(document).ready(function() {
 		e.preventDefault(); 
 		
 		var $form = $(this),
-		name = $form.find('input[name="name"]').val(),
 		email = $form.find('input[name="email"]').val(),
 		url = $form.attr('action');
 		
-		$.post(url, {name:name, email:email},
+		$.post(url, {email:email},
 		  function(data) {
 		      if(data)
 		      {
@@ -51,7 +50,7 @@ $(document).ready(function() {
 				$(this).submit();
 		    }
 		});
-	$("#submit-btn").click(function(e){
+	$("#submit").click(function(e){
 		e.preventDefault(); 
 		$("#signup-form").submit();
 	});
