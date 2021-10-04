@@ -3,10 +3,10 @@ $(document).ready(function() {
 		e.preventDefault(); 
 		
 		var $form = $(this),
-		email = $form.find('input[name="email"]').val(),
-		url = $form.attr('action');
-		
-		$.post(url, {email:email},
+		url = $form.attr('action'),
+		data = $form.serializeArray().reduce((o,kv) => ({...o, [kv.name]: kv.value}), {})
+
+		$.post(url, data,
 		  function(data) {
 		      if(data.result)
 		      {
