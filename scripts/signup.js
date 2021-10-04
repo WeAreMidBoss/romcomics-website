@@ -50,7 +50,7 @@ $(document).ready(function() {
 				$(this).submit();
 		    }
 		});
-	$("#submit").click(function(e){
+	$("#submit-btn").click(function(e){
 		e.preventDefault(); 
 		$("#signup-form").submit();
 	});
