@@ -8,24 +8,24 @@ $(document).ready(function() {
 		
 		$.post(url, {email:email},
 		  function(data) {
-		      if(data)
+		      if(data.result)
 		      {
-		      	if(data=="Some fields are missing.")
+		      	if(data.result=="Some fields are missing.")
 		      	{
 			      	$("#status").text("Please fill in your email.");
 			      	$("#status").css("color", "red");
 		      	}
-		      	else if(data=="Invalid email address.")
+		      	else if(data.result=="Invalid email address.")
 		      	{
 			      	$("#status").text("Your email address is invalid.");
 			      	$("#status").css("color", "red");
 		      	}
-		      	else if(data=="Invalid list ID.")
+		      	else if(data.result=="Invalid list ID.")
 		      	{
 			      	$("#status").text("Your list ID is invalid.");
 			      	$("#status").css("color", "red");
 		      	}
-		      	else if(data=="Already subscribed.")
+		      	else if(data.result=="Already subscribed.")
 		      	{
 			      	$("#status").text("You're already subscribed!");
 			      	$("#status").css("color", "red");
