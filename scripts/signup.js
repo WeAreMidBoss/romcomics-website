@@ -29,6 +29,7 @@ $(document).ready(function() {
 		      	{
 			      	$("#status").text("You're already subscribed!");
 			      	$("#status").css("color", "red");
+			      	window.location.replace("http://romcomics.io/contest2021entered/");
 		      	}
 		      	else
 		      	{
